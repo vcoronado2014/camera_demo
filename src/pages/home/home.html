@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Camara Prod
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+      <button ion-item block (click)="abrirImagenUno()">
+        Abrir imagen 1
+      </button>
+      <button ion-item block (click)="abrirImagenDos()">
+        Abrir imagen 2
+      </button>
+    </ion-list>
+  <button ion-button block (click)="initializePreview()">Toma una foto</button>
+  <img [src]="image" *ngIf="image" />
+</ion-content>
